@@ -1,4 +1,6 @@
 function home(req,res){
-    return res.send('<h1>Express is up for Codeial!</h1>');
+    return res.render("home",{
+        title:"Home"
+    });
 };
 module.exports.home=home;
